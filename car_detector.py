@@ -6,7 +6,7 @@ import cv2
 cap = cv2.VideoCapture(0)
 
 # Trained XML classifiers describes some features of some object we want to detect
-car_cascade = cv2.CascadeClassifier('cars.xml')
+car_cascade = cv2.CascadeClassifier(r'Models\cars.xml')
 
 # loop runs if capturing has been initialized.
 while True:
@@ -29,7 +29,7 @@ while True:
     # Display frames in a window
     cv2.imshow('video2', frames)
 
-# Wait for Esc key to stop
+    # Wait for Esc key to stop
     if cv2.waitKey(33) == 27:
         break
 

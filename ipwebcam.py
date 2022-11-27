@@ -11,7 +11,7 @@ detector = ObjectDetection()
 detector.setModelTypeAsYOLOv3()
 detector.setModelPath(os.path.join(execution_path , "yolo.h5"))
 detector.loadModel()
-detections = detector.detectObjectsFromImage(input_image=os.path.join(execution_path , "obj.jpeg"), output_image_path=os.path.join(execution_path , "imagenew.jpg"), minimum_percentage_probability=30)
+detections = detector.detectObjectsFromImage(input_image=os.path.join(execution_path, "Media/obj.jpeg"), output_image_path=os.path.join(execution_path, "imagenew.jpg"), minimum_percentage_probability=30)
 
 # for eachObject in detections:
 #     print(eachObject["name"] , " : ", eachObject["percentage_probability"], " : ", eachObject["box_points"] )
